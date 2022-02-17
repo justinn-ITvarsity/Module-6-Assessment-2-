@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>Porsche 911 GT3 RS</h1></center>
+        <div class="navbar">
+  <a href="sale.html">Back</a>
+        </div>
+
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/12376142/Crop800x600" style="width:50%">
+      </center>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/12376158/Crop800x600" style="width:50%">
+      </center>
+        
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/12376164/Crop800x600" style="width:50%">
+      </center>
+    
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/12376166/Crop800x600" style="width:50%">
+      </center>
+
+  </div>
+
+  <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/12376167/Crop800x600" style="width:50%">
+      </center>
+
+  </div>
+
+  <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/12376208/Crop800x600" style="width:50%">
+      </center>
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  
+
+</div>
+    <p>Sports Chrono Plus Package,Carbon Ceramic Brakes, Carbon Fibre Interior, Sports Exhaust, LED Lights,Lifting kit ,Carbon Fibre Bucket Seats , Roll Bar, Alcantara seats, Alcantara Rooflining, Paddle Shift, Climate Control, Bluetooth, Cruise Control, Automatic Lights, Sports Suspension.</p>
+    <p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+    
+    <div id="copyright">
+        <p>&copy; All Rights Reserved | Designed by Justin  </p>
+    </div>
+</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>

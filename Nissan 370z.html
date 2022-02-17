@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>Nissan 370Z Coupe</h1></center>
+        <div class="navbar">
+  <a href="sale.html">Back</a>
+        </div>
+
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/15997362/Crop800x600" style="width:50%">
+          </center>
+      
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/15997363/Crop800x600" style="width:50%">
+      </center>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/15997364/Crop800x600" style="width:50%">
+      </center>
+        
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/15997365/Crop800x600" style="width:50%">
+      </center>
+    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/15997366/Crop800x600" style="width:50%">
+      </center>
+
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      
+      <center>
+      <img src="https://img.autotrader.co.za/15997367/Crop800x600" style="width:50%">
+      </center>
+
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  
+</div>
+    <p>• 3.7 litre Nissan VQ V6
+• 6-speed close ratio manual gearbox
+• 0 – 100km’s in 5.3 seconds
+• Driver, Passenger, Curtain & Side Airbags
+• ABS with EBD and Brake Assist
+• VDC & TCS Systems
+• Automatic climate control
+• 19” Forged RAYS Aluminium-Alloy</p>
+    <p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+    
+    <div id="copyright">
+        <p>&copy; All Rights Reserved | Designed by Justin  </p>
+    </div>
+</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>
